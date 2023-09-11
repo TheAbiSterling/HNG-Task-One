@@ -1,8 +1,65 @@
-body {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: "poppins";
+  text-decoration: none;
+}
+
+img {
+  border-radius: 50%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+  max-width: 100%;
+  min-height: 80vh;
+  padding: 3rem;
+  display: grid;
+  place-items: center;
+  justify-items: center;
+  gap: 10px;
+  border: 3px solid rgb(6, 8, 1);
+  border-radius: 20px;
+}
+.container #slack-section {
+  display: grid;
+  place-items: center;
+  font-variant: small-caps;
+}
+.container #slack-section [data-testid="slackUserName"] {
+  font-size: 2rem;
+}
+.container #date-and-time-section {
+  width: auto;
+  padding-block: 1rem;
+  font-variant: small-caps;
+  font-weight: bold;
+}
+.container #date-and-time-section #DayOfWeek {
+  font-size: 1.5rem;
+  margin-block: 1rem;
+}
+.container #date-and-time-section #currentTime {
+  font-size: 1.2rem;
   text-align: center;
 }
-.profile-image {
-  border-radius: 50%;
-  max-width: 200px;
+.container #track-info [data-testid="myTrack"] {
+  color: rgb(6, 8, 1);
+}
+.container #repo-section {
+  display: block;
+}
+.container #repo-section #repoUrl {
+  display: inline-block;
+  font-size: 14px;
+  color: rgb(240, 134, 221);
+  font-weight: 600;
+}
+.container #repo-section #repoUrl:hover {
+  text-decoration: underline;
+  font-weight: 100;
 }
