@@ -13,37 +13,55 @@
   </head>
 
   <body>
-    <!-- Slack Display Picture -->
-    <img
-      src="./profile pic.jpg"
-      width="180"
-      height="180"
-      alt="TheAbi"
-      data-testid="slackDisplayImage"
-    />
+    <div class="container">
+      <!-- Slack Display Picture -->
+      <section id="slack-section">
+        <div>
+          <img
+            src="./profile pic.jpg"
+            width="180"
+            height="180"
+            alt="TheAbi"
+            data-testid="slackDisplayImage"
+          />
+        </div>
 
-    <!-- Slack Name -->
-    <h1>Slack Name:<span data-testid="slackUserName">The Abi</span></h1>
+        <div>
+          <h1 data-testid="slackUserName">The Abi</h1>
+        </div>
+      </section>
 
-    <!-- Current Day of the Week -->
-    <h4>Today is <span data-testid="currentDayOfTheWeek"></span></h4>
+      <!-- Date and Time Section -->
+      <section id="date-and-time-section">
+        <div
+          data-testid="currentDayOfTheWeek"
+          id="DayOfWeek"
+          style="text-align: center"
+        ></div>
 
-    <!-- Current UTC Time -->
-    <h4>
-      Current UTC Time:
-      <span data-testid="currentUTCTime">1631021369000</span>
-    </h4>
+        <div data-testid="currentUTCTime" id="currentTime"></div>
+      </section>
 
-    <!-- Track -->
-    <h4>Track:<span data-testid="myTrack">Frontend</span></h4>
+      <!-- ... Track Info Section...  -->
+      <section id="track-info">
+        <h4 data-testid="myTrack">Frontend Track</h4>
+      </section>
 
-    <!-- GitHub URL -->
-    <h4>
-      <a href="https://github.com/TheAbiSterling/HNG-Task-One"
-        >GitHub Repository
-        <span data-testid="githubURL"></span>
-      </a>
-    </h4>
+      <!-- Github Url section  -->
+      <section id="repo-section">
+        <a
+          data-testid="githubURL"
+          id="repoUrl"
+          href="https://github.com/TheAbiSterling/HNG-Task-One"
+          target="_blank"
+          >View Github Repo</a
+        >
+      </section>
+    </div>
   </body>
-  <footer>&#169; All Rights Reserved, 2023.</footer>
+  <footer>
+    <div id="footer" style="text-align: center">
+      &#169; All Rights Reserved, 2023.
+    </div>
+  </footer>
 </html>
